@@ -1,0 +1,50 @@
+[
+    {
+        "Applet_No": "Frisbee",
+        "Description": "This activity involves a fun and fast-paced game of ultimate frisbee, where players aim to score points by catching the frisbee in the opposing team's end zone.",
+        "file": "frisbee.html",
+        "Image": "frisbee-toss.webp"
+    },
+    {
+        "Applet_No": "Basketball",
+        "Description": "This activity allows players to engage in a team sport where they try to score by shooting a basketball into the opposing team's hoop.",
+        "file": "basketball.html",
+        "Image": "360_F_217451286_ixsvEptyrSYvxBvcyEGWKAVZUxFrayJ9.webp"
+    },
+    {
+        "Applet_No": "Volleyball",
+        "Description": "This activity allows players to participate in a fast-paced team sport where two teams compete to score points by hitting a volleyball over a net.",
+        "file": "volleyball.html",
+        "Image": "volleyball-team-in-action.webp"
+    },
+    {
+        "Applet_No": "Badminton",
+        "Description": "This activity involves a game where two or four players use rackets to hit a shuttlecock back and forth over a net.",
+        "file": "badminton.html",
+        "Image": "two-kids-playing-badminton-in-a-gymnasium.webp"
+    },
+    {
+        "Applet_No": "Taekwondo",
+        "Description": "This activity teaches the art of Taekwondo, a Korean martial art focused on head-height kicks, jumping and spinning kicks, and fast footwork.",
+        "file": "taekwondo.html",
+        "Image": "taekwondo.webp"
+    },
+    {
+        "Applet_No": "Dance",
+        "Description": "This activity includes various forms of dance, allowing users to engage in creative expression through rhythm and movement.",
+        "file": "dance.html",
+        "Image": "https://i.imgflip.com/4z1ohk.gif"
+    },
+    {
+        "Applet_No": "Walking",
+        "Description": "This activity encourages a simple and effective way to stay active by walking outdoors or indoors for exercise.",
+        "file": "walking.html",
+        "Image": "https://imgs.search.brave.com/fhL1Swdaa9KxEHSdkOejsPf_k8FPP0iJECHyNmqDpRQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naWZk/Yi5jb20vaW1hZ2Vz/L2hpZ2gvdGhlLXRl/Y2hub2xvZ3ktaXMt/d2lubmluZy1nMWNj/YzlrenpqZWN4djln/LmdpZg.gif"
+    },
+    {
+        "Applet_No": "Running",
+        "Description": "This activity promotes cardiovascular health by encouraging users to participate in running exercises, whether outdoors or on a treadmill.",
+        "file": "running.html",
+        "Image": "https://imgs.search.brave.com/SLkbQqtK-q8EEqngWDQQgxYQEYZ_up4Al_RMyOXhOys/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTQuZ2lwaHkuY29t/L21lZGlhL1RnNnh6/cDFWSjRLbDlTSWEz/bC8yMDAuZ2lmP2Np/ZD03OTBiNzYxMTh4/YjA3am1qMDI2cTB1/Y2IwZ2x2a2NxdGhk/ejh5NW00d3YxbWhn/bTYmZXA9djFfZ2lm/c19zZWFyY2gmcmlk/PTIwMC5naWYmY3Q9/Zw.gif"
+    }
+]
