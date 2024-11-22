@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellLife360</title>
+    <link rel="icon" href="WellLife360.png">
+    <link rel="stylesheet" type="text/css" href="userhomepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="./files/bg.jpg">
+        <div class="content" id="home"> 
+            <nav>
+                <a href="userhomepage.html" class="logo" title="WellLife360">WL360</a>
+                <ul class="navbar">
+                    <li>
+                        <a href="userhomepage.html">Home</a>
+                        <a href="schedule.html">Schedule</a>
+                        <a href="request.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1>WellLife360</h1>
+                <p>Embracing Wellness and a Balanced Lifestyle for a Better You</p>         
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="text" style="text-align: center; margin-bottom: 20px;">
+            <h2 style="font-size: 24px; color: #000000; font-family: 'Paytone One', sans-serif;">
+                What is a Balanced Lifestyle?
+            </h2>
+        </div>
+        <div class="rowitems" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+            <!-- Text Content -->
+            <div class="container-box" style="flex: 1; min-width: 280px;">
+                <h4 style="font-size: 16px; color: #333; line-height: 1.6;">
+                    A balanced lifestyle means making intentional choices to nurture your physical, mental, and emotional health. It's about creating harmony in your daily life, emphasizing well-being through:
+                </h4> 
+                <h4 style="font-size: 14px; color: #555; margin-top: 15px;">
+                    <strong>Key Components:</strong>
+                    <ul style="margin: 10px 0 20px 20px; list-style: disc; color: #333;">
+                        <li>Healthy Eating Habits</li>
+                        <li>Regular Exercise</li>
+                        <li>Mental Wellness</li>
+                        <li>Stress Management</li>
+                        <li>Quality Sleep</li>
+                        <li>Social Connections</li>
+                    </ul>
+                </h4>
+                <h4 style="font-size: 14px; color: #555;">
+                    Below are a few inspiring images of people enjoying healthy activities.
+                </h4>
+            </div>
+            <!-- Image Content -->
+            <div class="image-container" style="flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <img src="Healthy-Lifestyle.jpg" alt="Healthy Lifestyle" class="interactive-img" 
+                    style="width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <img src="work_life_balance.webp" alt="Work-Life Balance" class="interactive-img" 
+                    style="width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select modal elements
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const captionText = document.getElementById('caption');
+            const closeBtn = document.querySelector('.close');
+
+            // Add click events to images
+            document.querySelectorAll('.interactive-img').forEach(img => {
+                img.addEventListener('click', () => {
+                    modal.style.display = 'block';
+                    modalImg.src = img.src;
+                    captionText.innerHTML = img.alt;
+                });
+            });
+
+            // Close the modal
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            // Close the modal on outside click
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+
+
+    <section class="fwmanage" id="fwmanage">
+        <div class="fwm-title">
+            <h2>What is Wellness?</h2>
+        </div>
+    
+        <div class="container-box" style="text-align: center;">
+            <h4>Wellness is a state of complete physical, mental, and social well-being. It's not just the absence of disease, but a proactive approach to maintaining health. Wellness encourages healthy habits, personal development, and balance in life. It is about striving to make mindful choices that lead to a better quality of life, both now and in the future. Through education, awareness, and support, we aim to make wellness accessible to all.</h4>
+            
+            <div style="display: flex; justify-content: center; gap: 40px; margin-top: 30px;">
+                <img src="wellnessinfographic.png" alt="" style="max-width: 350px; height: auto;">
+                <img src="Wheel_0.png" alt="" style="max-width: 350px; height: auto;">
+                <img src="what-is-wellness-gif-1024x646.png" alt="" style="max-width: 350px; height: auto;">
+            </div>
+        </div>
+    </section>    
+
+    <section class="container" style="padding: 20px;">
+        <div class="text" style="text-align: center; margin-bottom: 20px;">
+            <h2>Recreational Activities at Northern Bukidnon State College</h2>
+            <h3>At Northern Bukidnon State College, students and faculty have access to a variety of recreational activities that promote physical fitness, teamwork, and fun. These activities are designed to engage individuals of all skill levels, whether you're looking for competition or simply want to stay active.</h3>               
+                <h2>Recreational Activities Offered at NBSC:</h2>
+        </div>
+        <div class="rowitems" style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
+            <div class="container-box" style="max-width: 900px; width: 100%;">       
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>1) Frisbee</h4>
+                    <img src="frisbee.jpg" alt="Frisbee" style="max-width: 250px; height: auto;">
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>2) Basketball</h4>
+                    <img src="basketball.jpg" alt="Basketball" style="max-width: 250px; height: auto;">
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>3) Volleyball</h4>
+                    <img src="volleyball.jpg" alt="Volleyball" style="max-width: 250px; height: auto;">
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>4) Badminton</h4>
+                    <img src="badminton.jpg" alt="Badminton" style="max-width: 250px; height: auto;">
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>5) Taekwondo</h4>
+                    <img src="taekwondo.jpg" alt="Taekwondo" style="max-width: 250px; height: auto;">
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>6) Dance</h4>
+                    <img src="dance.jpg" alt="Dance" style="max-width: 250px; height: auto;">
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>7) Walking</h4>
+                    <img src="walking.jpg" alt="Walking" style="max-width: 250px; height: auto;">
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+                    <h4>8) Running</h4>
+                    <img src="running.jpg" alt="Running" style="max-width: 250px; height: auto;">
+                </div>
+            </div>
+            <h1>These activities provide opportunities for students to engage in physical exercise, build camaraderie with peers, and enjoy a balanced and active lifestyle.</h1>
+        </div>
+    </section>
+    
+    
+
+<section class="fwm" id="fwm">
+    <div class="fwm-title">
+        <h2>Together, We Thrive!</h2>
+    </div>
+
+    <div class="container-box">
+        <h4>
+            At WellLife360, we believe that wellness is a community effort. We’re here to help you on your journey to a balanced lifestyle, but we need your support too. You can make a difference by joining wellness programs, sharing healthy tips, or simply starting with small changes in your life. <br><br>
+            We invite you to participate in our events and be part of the wellness movement. <br><br>
+            Together, we can create a healthier and happier world.
+        </h4>
+    </div>
+</section>
+
+
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Follow Us</h2>
+        <p>Follow us on social media to get updates on wellness tips, events, and more.</p>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    </div>
+</section>
+
+
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register.html">Join Us</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Tel: 1800-00-000 Email: support@welllife360.com | Copyright © 2023 WellLife360 | All Rights Reserved. <br>Website developed by: Your Team</p>
+    </div>
+</section>
+
+</body>
+</html>
