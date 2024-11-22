@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Login Form</title>
+    <link rel="stylesheet" href="userloginstyle.css">
+</head>
+
+<body>
+    <div class="main">
+        <img src="https://cdn-icons-png.flaticon.com/512/8801/8801434.png" alt="Profile Icon" class="profile-img">
+        
+        <h3 style="color: #000000">Enter your Account Information</h3>
+
+        <form id="loginForm" onsubmit="return validateForm()">
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" name="username" 
+                   placeholder="Enter your Username" required>
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="password" 
+                   placeholder="Enter your Password" required>
+
+                   <div class="wrap">
+                    <button type="submit" class="btn" style="color: #000000; font-weight: bold;">Submit</button>
+                </div>
+                
+        </form>
+
+        <p>Not registered?
+            <a href="#" style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
+
+    <script>
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === '' || password === '') {
+                alert('Both username and password are required!');
+                return false;
+            }
+
+            window.location.href = 'userhomepage.html';
+            return false;
+        }
+    </script>
+</body>
+
+</html>
