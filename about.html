@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes at least full screen height */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            margin: 20px;
+            flex: 1; /* This ensures the content section takes available space */
+        }
+
+        .section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .team-member {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member div {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: rgb(21, 74, 74);
+            margin-top: auto; /* Push the footer to the bottom */
+            padding: 40px 0;
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .footlinks h4 {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .footlinks h4::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 70px;
+            left: 0;
+            bottom: -7px;
+            background: white;
+        }
+
+        .footlinks ul li {
+            margin-bottom: 10px;
+        }
+
+        .footlinks ul li a {
+            color: #e0e0e0;
+            font-size: 17px;
+            transition: 0.30s ease;
+        }
+
+        .footlinks ul li a:hover {
+            color: #39FF14;
+        }
+
+        .footer-bottom {
+            background-color: rgb(21, 74, 74);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-bottom p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <div class="content">
+        <!-- Company Overview Section -->
+        <div class="section">
+            <h2>Who We Are</h2>
+            <p>We are a dedicated team of professionals committed to delivering the best products and services in the industry. Our mission is to innovate and create solutions that make a real difference in people's lives.</p>
+        </div>
+
+        <!-- Mission and Vision Section -->
+        <div class="section">
+            <h2>Our Mission & Vision</h2>
+            <p><strong>Mission:</strong> Our mission is to lead the industry with high-quality products and services that exceed customer expectations and create lasting value.</p>
+            <p><strong>Vision:</strong> We aim to become the most trusted brand by continuously improving, innovating, and putting our customers at the heart of everything we do.</p>
+        </div>
+
+        <!-- Team Section -->
+        <div class="section">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Marketing Director</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 3">
+                    <h3>Sarah Lee</h3>
+                    <p>Lead Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register.html">Join Us</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Tel: 1800-00-000 Email: support@welllife360.com | Copyright © 2023 WellLife360 | All Rights Reserved. <br>Website developed by: Your Team</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
