@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url('https://wallpapers.com/images/hd/mountain-and-lake-hd-desktop-2zzq9s6dv9woiw8n.webp'); /* Replace this with your image link */
+    background-size: cover;
+    background-position: center;
+    text-align: center; /* Centers text elements globally */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and buttons to the right */
+    align-items: center;
+    z-index: 1000; /* Ensures the navbar stays on top */
+}
+
+.navbar-logo span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Right side text link in navbar */
+.navbar-buttons {
+    display: flex;
+}
+
+.explore-link {
+    color: #ffffff; /* Green color for the text link */
+    font-size: 2rem; /* Increased font size to match WellLife360 size */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Underline effect */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.explore-link:hover {
+    color: #218838; /* Darker green on hover */
+}
+
+/* Left tagline */
+.left-tagline {
+    position: absolute;
+    left: 20px;
+    top: 15%; /* Adjusted for better positioning */
+    width: 40%;
+    text-align: left;
+    font-size: 2.5rem; /* Increased size for title */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Makes the text readable on any background */
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s; /* Delay for the animation */
+}
+
+.sub-tagline {
+    font-size: 1.2rem; /* Smaller size for the sub-welcome sentence */
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1s; /* Delay for the animation */
+}
+
+/* Content (Button) */
+.content {
+    position: absolute;
+    bottom: 10%; /* Center the button vertically but with some margin from the bottom */
+    left: 50%; /* Center the content horizontally */
+    transform: translateX(-50%); /* Adjust the element to be centered */
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent overlay for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInButton 2s forwards; /* Button fade-in */
+    animation-delay: 1s; /* Delay to ensure it fades in after title/sub-title */
+}
+
+/* Button Styling */
+.btn {
+    padding: 20px 50px; /* Increased padding for a larger button */
+    font-size: 1.5rem; /* Larger font size */
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+    transform: scale(1.1); /* Slight scale effect on hover for more emphasis */
+}
+
+/* Animation for fading in title and sub-title */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation for fading in the button */
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

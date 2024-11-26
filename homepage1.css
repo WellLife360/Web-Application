@@ -1,0 +1,607 @@
+
+/* GGGGG   L       OOO   BBBBB   L       SSSSS      TTTTT  Y   Y  L       EEEEE  SSSSS        
+  G       L      O   O  B    B  L      S              T     Y Y   L       E      S             
+  G  GG   L      O   O  BBBBB   L      SSSSS          T      Y    L       EEEE   SSSSS         
+  G   G   L      O   O  B    B  L          S          T      Y    L       E          S        
+  GGGG   LLLLL   OOO   BBBBB   LLLLL   SSSSS          T      Y    LLLLL   EEEEE   SSSSS        */
+
+
+/* Global Styles ---------------------------------------------------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/*Top Views part*/
+.underline {
+    text-decoration: underline;
+}
+/*Top Views part*/
+
+/* Global Styles ---------------------------------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Navbar Section -------------------------------------------------------------------------------------------- */
+.transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.73);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.transparent-navbar a.nav-link, 
+.transparent-navbar a.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.transparent-navbar .nav-link:hover,
+.transparent-navbar .navbar-brand:hover {
+    color: olive;
+    font-size: 1.5rem; /* Increase the font size on hover */
+    text-decoration: underline;
+}
+/* Navbar Section -------------------------------------------------------------------------------------------- */
+
+/* Drop Down Menu -------------------------------------------------------------------------------------------- */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    min-width: 160px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#discoverLink {
+    pointer-events: none;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* Drop Down Menu -------------------------------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Hero Section ---------------------------------------------------------------------------------------------- */
+.hero-section {
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Motivational Quote Styling */
+.quote-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.787);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    animation: moveQuote 10s linear infinite; /* Set the interval of 10 seconds */
+}
+
+.quote-container span {
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeInOut 10s linear infinite; /* Fades in and out */
+}
+
+/* Hero Section Title Styling */
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover effect for scaling the title */
+.hero-section h1:hover {
+    transform: scale(1.2);
+    color: #45ffbe;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+    letter-spacing: 3px;
+    transition: all 0.5s ease;
+}
+
+/* Spin effect for "360" */
+.spin-text {
+    display: inline-block;
+    transition: transform 0.6s ease;
+}
+
+/* Trigger spin effect on hover */
+.hero-section h1:hover .spin-text {
+    animation: spinOnHover 1s linear infinite;
+}
+
+/* Spin effect when the page is loaded */
+@keyframes spinOnLoad {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the spin effect on page load */
+.hero-section h1 .spin-text {
+    animation: spinOnLoad 1s ease-in-out forwards;
+}
+
+/* Tagline styling */
+.hero-tagline {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: #ffffffca;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+.hero-tagline:hover {
+    animation: taglineEffect 1s ease infinite alternate;
+    color: #fff;
+}
+
+/* Add space below the hero section */
+.hero-section + .info-section {
+    margin-top: 70px; /* Adjust this value to your preference */
+}
+
+/* Animations ----------------------------------------------------------------------------------------------- */
+@keyframes moveQuote {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+@keyframes taglineEffect {
+    0% {
+        color: #ffffffca;
+    }
+    50% {
+        color: #45ffbe;
+    }
+    100% {
+        color: #ffffffca;
+    }
+}
+
+
+/* Hero Section ---------------------------------------------------------------------------------------------- */
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Info Section --------------------------------KEY GOALS-------------------------------------------------------------- */
+.info-section {
+    background: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black; /* Changed color to black */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px rgba(5, 92, 60, 0.674);
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #004225;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+/* Info Section -------------------------------KEY GOALS------------------------------------------------------ */
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Articles Section ------------------------------------------------------------------------------------------ */
+.container h2 {
+    color: #004225;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container h4 {
+    color: #00563f;
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 1rem;
+    color: #000000b9;
+    font-weight: bold;
+}
+/* Articles Section ------------------------------------------------------------------------------------------ */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Mission and Vision Section---------------------------------------------------------------------------------- */
+.mission-vision-section {
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.mission-vision-section .card {
+    position: relative;
+    margin-bottom: 20px;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission-vision-section .card-body {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.mission-vision-section h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.mission-vision-section .card-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #000000b8;
+    font-weight: bold;
+}
+
+.mission-vision-section .mission-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/yellow-minimal-arrows_53876-75139.jpg?ga=GA1.1.1846033345.1730653852&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.3s ease;
+}
+
+.mission-vision-section .vision-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-vector/sketchy-eye_23-2147501010.jpg?ga=GA1.1.1846033345.1730653852&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.3s ease;
+}
+
+.mission-vision-section .card:hover::before {
+    left: 0;
+    opacity: 1;
+}
+
+.mission-vision-section .card:hover {
+    transform: scale(1.05);
+}
+
+/* Mission and Vision Section---------------------------------------------------------------------------------- */
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Explore Section Styles --------------------------------------------------------------------------------------*/
+.explore-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.explore-section h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.explore-card {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-card img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer; /* Hint that image is clickable */
+    transition: transform 0.3s ease;
+}
+
+.explore-card .card-title {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.explore-card:hover {
+    transform: translateY(-5px); /* Hover effect: slightly lift the card */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow effect on hover */
+}
+
+.explore-card img:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+   
+}  
+.explore-card-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit color from the parent */
+}
+
+/* Explore Section Styles --------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*FOOTER SECTION-------------------------------------------------------------------------------------------------------------------- */
+.footer {
+    background-color: #386ea1d1;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #808080;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00aaff;
+}
+
+.social-media {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+}
+
+.suggestions {
+    margin: 30px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+    max-width: 400px;
+}
+
+.suggestion-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    margin: 0 0 10px 10px;
+}
+
+.suggestion-box {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #333333;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.suggestion-box:focus {
+    border-color: #00ffff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* THE SEND BUTTON ------------------------------------------------------------------------------------------------*/
+
+.send-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+    background-color: #00aaff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.send-btn:hover {
+    background-color: #00ffff;
+    transform: scale(1.05);
+}
+/* THE SEND BUTTON ------------------------------------------------------------------------------------------------*/
+
+/*FOOTER SECTION---------------------------------------------------------------------------------------------------- */
+
+/*----------------------------------------------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------------------------------------------- */
