@@ -11,25 +11,34 @@
 <body>
 
 <!-- Navbar Section -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light transparent-navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="homepage.html">WellLife360</a>
+        <a class="navbar-brand" href="index.html" style="color: white;">WellLife360</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> <!-- ms-auto aligns the navbar items to the right -->
-                <li class="nav-item">
-                    <a class="nav-link" href="homepage.html">Home</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="discoverLink" style="color: white; pointer-events: none;">
+                        Discover
+                        <span class="dropdown-arrow"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Nutrition.html">Nutrition</a></li>
+                        <li><a class="dropdown-item" href="#">Fitness</a></li>
+                        <li><a class="dropdown-item" href="#">Sexual Health</a></li>
+                        <li><a class="dropdown-item" href="#">Mental Well-Being</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Well-Being</a>
+                    <a class="nav-link" href="#" style="color: white;">Well-Being</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Resources</a>
+                    <a class="nav-link" href="#" style="color: white;">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#" style="color: white;">Contact</a>
                 </li>
             </ul>
         </div>

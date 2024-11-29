@@ -18,42 +18,113 @@ body {
 /* NAVIGATION BAR---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* NAVIGATION BAR---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Navbar Section -------------------------------------------------------------------------------------------- */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.558); /* Transparent grey */
-    backdrop-filter: blur(5px); /* Adds a slight blur to the background */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+/* GGGGG   L       OOO   BBBBB   L       SSSSS      TTTTT  Y   Y  L       EEEEE  SSSSS        
+  G       L      O   O  B    B  L      S              T     Y Y   L       E      S             
+  G  GG   L      O   O  BBBBB   L      SSSSS          T      Y    L       EEEE   SSSSS         
+  G   G   L      O   O  B    B  L          S          T      Y    L       E          S        
+  GGGG   LLLLL   OOO   BBBBB   LLLLL   SSSSS          T      Y    LLLLL   EEEEE   SSSSS        */
 
-.navbar-brand {
-    font-weight: bold;
-    color: white !important;
-    transition: font-size 0.3s ease; /* Smooth transition for brand size */
-}
 
-.navbar-nav .nav-link {
-    color: white !important;
-    font-size: 1.1rem;
-    padding: 10px 15px;
-    transition: font-size 0.3s ease; /* Transition for font size change */
+/* Global Styles ---------------------------------------------------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
-
-.navbar-nav .nav-link:hover {
-    color: #00ffff !important; /* Color change on hover */
+/*Top Views part*/
+.underline {
     text-decoration: underline;
-    font-size: 1.3rem; /* Increase font size on hover */
 }
+/*Top Views part*/
+
+/* Global Styles ---------------------------------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Navbar Section -------------------------------------------------------------------------------------------- */
-/* NAVIGATION BAR---------------------------------------------------------------------------------------------------------------------------------------------- */
-/* NAVIGATION BAR---------------------------------------------------------------------------------------------------------------------------------------------- */
-/* NAVIGATION BAR---------------------------------------------------------------------------------------------------------------------------------------------- */
+.transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.73);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.transparent-navbar a.nav-link, 
+.transparent-navbar a.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.transparent-navbar .nav-link:hover,
+.transparent-navbar .navbar-brand:hover {
+    color: olive;
+    font-size: 1.5rem; /* Increase the font size on hover */
+    text-decoration: underline;
+}
+/* Navbar Section -------------------------------------------------------------------------------------------- */
+
+/* Drop Down Menu -------------------------------------------------------------------------------------------- */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    min-width: 160px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#discoverLink {
+    pointer-events: none;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* Drop Down Menu -------------------------------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
