@@ -1,220 +1,214 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    overflow-x: hidden;
-  }
-  
-  /* Header Section */
-  .header {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center center; /* Replace with your desired image URL */
-    background-size: cover; /* Ensures the image covers the entire area */
-    padding: 50px 20px;
-    text-align: center;
-    color: white;
-    position: relative;
-    animation: fadeInDown 1s ease-in-out;
-  }
-  
-  .header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
-    z-index: 1;
-  }
-  
-  .header h1,
-  .header p {
-    position: relative;
-    z-index: 2; /* Ensures the text is above the overlay */
-  }
-  
-  .header h1 {
-    font-size: 3em;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  .header p {
-    font-size: 1.2em;
-    margin: 10px 0 0;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  
-  /* Navigation */
-  .nav {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #555;
-    margin: 0 15px;
-    font-size: 1em;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .nav a:hover {
-    color: #FF8C00;
-  }
-  
-  /* Banner Section */
-  .banner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FCE6B1;
-    padding: 50px 20px;
-    animation: slideIn 1.2s ease-in-out;
-  }
-  
-  .banner img {
-    max-width: 30%;
-    height: auto;
-    border-radius: 10px;
-    transform: scale(0.9);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .banner img:hover {
-    transform: scale(1);
-  }
-  
-  .banner .text {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .banner h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-    animation: fadeInUp 1s ease-in-out;
-  }
-  
-  .banner p {
-    font-size: 1em;
-    color: #666;
-    animation: fadeInUp 1.2s ease-in-out;
-  }
-  
-  /* Featured Section */
-  .featured {
-    margin: 20px;
-  }
-  
-  .featured h2 {
-    text-align: center;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #333;
-    animation: fadeInDown 1s ease-in-out;
-  }
-  
-  .featured .articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  .featured .article {
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 15px;
-    flex: 1 1 calc(33% - 30px);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    animation: scaleUp 1s ease-in-out;
-  }
-  
-  .featured .article:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .featured .article img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .featured .article h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  .featured .article p {
-    font-size: 0.9em;
-    color: #666;
-  }
-  
-  /* Keyframe Animations */
-  @keyframes fadeIn {
-    from {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+.header {
+  background: url('https://t3.ftcdn.net/jpg/02/91/65/98/360_F_291659823_ZNUv5x2M33pcDDuCOc0o8zdlEi7VihK8.jpg') no-repeat center center; /* Replace with your desired image URL */
+  background-size: cover; /* Ensures the image covers the entire area */
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
+  z-index: 1;
+}
+
+.header h1,
+.header p {
+  position: relative;
+  z-index: 2; /* Ensures the text is above the overlay */
+}
+
+.header h1 {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+  text-decoration: none;
+  color: #555;
+  margin: 0 15px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: #FF8C00;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FCE6B1;
+  padding: 50px 20px;
+  animation: slideIn 1.2s ease-in-out;
+}
+
+.banner img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner img:hover {
+  transform: scale(1);
+}
+
+.banner .text {
+  flex: 1;
+  padding: 20px;
+}
+
+.banner h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.banner p {
+  font-size: 1em;
+  color: #666;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Featured Section */
+.featured {
+  margin: 20px;
+}
+
+.featured h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.featured .articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.featured .article {
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1 1 calc(33% - 30px);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: scaleUp 1s ease-in-out;
+}
+
+.featured .article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.featured .article img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.featured .article h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.featured .article p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
       opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
   }
-  
-  @keyframes fadeInUp {
-    from {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
       opacity: 0;
       transform: translateY(20px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  @keyframes fadeInDown {
-    from {
+}
+
+@keyframes fadeInDown {
+  from {
       opacity: 0;
       transform: translateY(-20px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  @keyframes slideIn {
-    from {
+}
+
+@keyframes slideIn {
+  from {
       opacity: 0;
       transform: translateX(-50px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateX(0);
-    }
   }
-  
-  @keyframes scaleUp {
-    from {
+}
+
+@keyframes scaleUp {
+  from {
       opacity: 0;
       transform: scale(0.8);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: scale(1);
-    }
   }
-  
+}
