@@ -335,6 +335,7 @@ h2 {
     color: #555;
 }
 
+
 /* Hover effects */
 .card:hover {
     transform: translateY(-5px);
@@ -369,3 +370,148 @@ h2 {
 /* CONTENTS about EXPLORE MORE--------------------------------------------------------------------------------------------------------------------------------- */
 /* CONTENTS about EXPLORE MORE--------------------------------------------------------------------------------------------------------------------------------- */
 /* CONTENTS about EXPLORE MORE--------------------------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+    background-color: #386ea1d1;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #808080;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00aaff;
+}
+
+.social-media {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+}
+
+.suggestions {
+    margin: 30px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+    max-width: 400px;
+}
+
+.suggestion-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    margin: 0 0 10px 10px;
+}
+
+.suggestion-box {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #333333;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.suggestion-box:focus {
+    border-color: #00ffff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* THE SEND BUTTON ------------------------------------------------------------------------------------------------*/
+
+.send-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+    background-color: #00aaff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.send-btn:hover {
+    background-color: #00ffff;
+    transform: scale(1.05);
+}
+/* THE SEND BUTTON ------------------------------------------------------------------------------------------------*/
+
+/*FOOTER SECTION---------------------------------------------------------------------------------------------------- */
+
+/*----------------------------------------------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------------------------------------------- */
