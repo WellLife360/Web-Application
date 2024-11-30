@@ -7,9 +7,10 @@
     <!-- Favicon -->
     <link rel="icon" href="https://img.freepik.com/free-vector/heart-icon-love-symbol-valentine-s-day-sign-vector-graphic_460848-8392.jpg?ga=GA1.1.1846033345.1730653852&semt=ais_hybrid" type="image/jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="homepage1.css">
+    <link rel="stylesheet" type="text/css" href="AboutUsStyle.css">
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light transparent-navbar">
         <div class="container-fluid">
@@ -46,45 +47,108 @@
 </body>
 </html>
 
-<!-- About Section -->
-<div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
+<section class="about-section" style="position: relative; text-align: center;">
+    <!-- Image -->
+    <img 
+      src="https://img.freepik.com/free-vector/company-employees-planning-task-brainstorming_74855-6316.jpg?t=st=1732990395~exp=1732993995~hmac=9633230cfbb564c2e4ab9aa163a25bd1d76d864cbd2765e72e10b036efd195c3&w=1060" 
+      alt="Breadcrumb: You are here - Home / About Us" 
+      style="width: 100%; height: auto; display: block; margin: 0;"
+    >
+    
+    <!-- Overlay Text -->
+    <div 
+      style="
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white; 
+        padding: 20px; 
+        border-radius: 10px;
+        max-width: 80%;
+      "
+    >
+      <h1>About Us</h1>
+      <p>WellLife360 is dedicated to promoting better health and wellness through balanced diets and regular exercise. Together, we help individuals create sustainable, healthier lifestyles.</p>
+    </div>
+  </section>
+  </section>
 
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  <section class="team-section" style="text-align: center;">
+    <h2>The Team</h2>
+    <div 
+      class="team-container" 
+      style="display: flex; justify-content: center; gap: 40px; align-items: center; margin: 20px 0; flex-wrap: nowrap;"
+    >
+      <!-- Team Member 1 -->
+      <div 
+        class="team-member" 
+        style="text-align: center; opacity: 0; transform: translateY(30px); animation: fadeInUp 1.2s ease-out forwards; animation-delay: 0.3s;"
+      >
+        <img 
+          src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.15752-9/462539699_452655567436630_7869059028991027099_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG3pSOn4f9z9jngTt3SRS-i6aDrG08VnovpoOsbTxWei5mmdEL7z7CnWm9QQToFp0B-bEPDhzudDP7lrwEZP1DF&_nc_ohc=AuUAFW43fkgQ7kNvgGnYJ_f&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&oh=03_Q7cD1QHZJGi3LJaeC43Xo-nEH06eAVgfgJErl2SPYd_W5YaIzA&oe=6772D5AA" 
+          alt="Mark Lester G. Rasonabe" 
+          style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+        >
+        <h3 style="margin: 10px 0 5px;">Mark Lester G. Rasonabe</h3>
+        <p style="font-weight: bold;">CEO</p>
+      </div>
+    
+      <!-- Team Member 2 -->
+      <div 
+        class="team-member" 
+        style="text-align: center; opacity: 0; transform: translateY(30px); animation: fadeInUp 1.2s ease-out forwards; animation-delay: 0.5s;"
+      >
+        <img 
+          src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.15752-9/462572489_938314460965753_1087043851213165355_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFE9OhHFORwoGnAm6dueWOkvXBAZWbM8-W9cEBlZszz5dW-FA0-_2NwdzjmzN_HXz4fmYp-gkS0sioRAN_NtfiI&_nc_ohc=Fl9FSOSeavoQ7kNvgGjakOj&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&oh=03_Q7cD1QFBm01xffHEL9xxFwJ-YBeVd26xEGu97qpPgLiYpOzSIQ&oe=6772E02B" 
+          alt="Erick James P. Rubin" 
+          style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+        >
+        <h3 style="margin: 10px 0 5px;">Erick James P. Rubin</h3>
+        <p style="font-weight: bold;">CEO</p>
+      </div>
+    
+      <!-- Team Member 3 -->
+      <div 
+        class="team-member" 
+        style="text-align: center; opacity: 0; transform: translateY(30px); animation: fadeInUp 1.2s ease-out forwards; animation-delay: 0.7s;"
+      >
+        <img 
+          src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.15752-9/462568215_1098476685022801_7302083104479455607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGmZsRH7dm961K4vuBek5Uh_uzQXFSckbH-7NBcVJyRsYeYFlpabiNAA57IUc8L5-YZRGuvEYMmNSTcJCQruE5e&_nc_ohc=f7Tkl0OtEYsQ7kNvgE0udiJ&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&oh=03_Q7cD1QHMs5zlPtwgfnCv7-e-vD2rhk9o8zAWmmUzUcGjGzzZ5g&oe=6772B441" 
+          alt="The Boss Baby" 
+          style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+        >
+        <h3 style="margin: 10px 0 5px;">The Boss Baby of the Decade</h3>
+        <p style="font-weight: bold;">COO</p>
+      </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div>
+  </section>
+  
+
+  <section class="about-ceo" style="text-align: center;">
+    <h2>Message from the CEOs</h2>
+    <p>
+      Hello, we’re Erick James P. Rubin and Mark Lester G. Rasonabe, co-CEOs of <b>WellLife360</b>. Together, we’re passionate about promoting wellness and lifestyle improvements for everyone. Whether it’s guiding people towards healthier diets or inspiring them to stay active, our mission is to make wellness accessible, practical, and sustainable.
+    </p>
+    <p>
+      Recently, we’ve been working on this project, <b>WellLife360</b>, where we’ve created a platform focused on health and lifestyle transformation. Our site is designed to offer practical resources, tools, and support to help individuals create better habits for a healthier future. This project has been a wonderful way for us to combine our skills in health advocacy, leadership, and digital innovation.
+    </p>
+    <p>
+      With diverse backgrounds and shared dedication to wellness, we believe that meaningful change begins with education and simple, consistent actions. Our vision is to help individuals achieve their best selves, one step at a time.
+    </p>
+    <h3>What We Can Do for You?</h3>
+    <ul style="display: inline-block; text-align: left;">
+      <li>Provide practical advice and tips for healthier living</li>
+      <li>Offer tools for creating sustainable wellness habits</li>
+      <li>Create engaging content to inspire lifestyle transformation</li>
+      <li>Simplify complex health and wellness concepts</li>
+    </ul>
+    <p>
+      We’re here to share ideas, support your journey, and work together to achieve your health and lifestyle goals. Let’s build a better, healthier you—together!
+    </p>
+  </section>
+  
 
 
 <!-- Footer Section -->
