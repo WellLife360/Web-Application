@@ -134,7 +134,7 @@ body {
 
 /* HERO IMAGE =========================================================================*/
 .hero-image {
-    background-image: url('https://media.post.rvohealth.io/wp-content/uploads/2024/04/Hub_desktop_healthyeating_3600x600_v2_2.jpg');
+    background-image: url('https://medlineplus.gov/images/Nutrition_share.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -151,7 +151,7 @@ body {
 
 .hero-image h1 {
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
     margin: 0;
     line-height: 1.3;
     z-index: 2;
@@ -159,7 +159,7 @@ body {
 
 .hero-image p {
     font-size: 1.25rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
     margin-top: 20px; /* Adjusted to add space between h1 and p */
     z-index: 2;
 }
@@ -178,6 +178,7 @@ body {
         margin-top: 10px; /* Reduced margin for smaller screens */
     }
 }
+
 
 /* HERO IMAGE----------------------------------------------------------------------------------------------------------------------------------------------- */
 /* HERO IMAGE----------------------------------------------------------------------------------------------------------------------------------------------- */
