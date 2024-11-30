@@ -1,15 +1,4 @@
 /* Special  Styles========================================================================================= */
-body {
-    font-family: Arial, sans-serif;
-}
-
-
-
-
-
-
-
-/* Special  Styles========================================================================================= */
 
 
 
@@ -413,7 +402,7 @@ h2 {
 }
 
 .footer-links a:hover {
-    color: #00aaff;
+    color: #000000;
 }
 
 .social-media {
@@ -465,7 +454,7 @@ h2 {
 .suggestion-box {
     width: 100%;
     padding: 10px;
-    border: 2px solid #00aaff;
+    border: 2px solid #000000;
     border-radius: 5px;
     background-color: #ffffff;
     font-size: 1rem;
@@ -476,7 +465,7 @@ h2 {
 }
 
 .suggestion-box:focus {
-    border-color: #00ffff;
+    border-color: #000000;
 }
 
 .footer-bottom {
@@ -487,16 +476,15 @@ h2 {
     text-align: center;
 }
 
-
 /* THE SEND BUTTON ------------------------------------------------------------------------------------------------*/
 
 .send-btn {
     width: 100%;
     max-width: 200px;
     padding: 10px;
-    border: 2px solid #00aaff;
+    border: 2px solid #000000;
     border-radius: 5px;
-    background-color: #00aaff;
+    background-color: #000000;
     color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
@@ -505,7 +493,7 @@ h2 {
 }
 
 .send-btn:hover {
-    background-color: #00ffff;
+    background-color: #000000;
     transform: scale(1.05);
 }
 /* THE SEND BUTTON ------------------------------------------------------------------------------------------------*/
