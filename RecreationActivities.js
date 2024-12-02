@@ -54,4 +54,4 @@ class AppletGallery {
     
 }
 
-const appletgallery = new AppletGallery('schedule.json');
+const appletgallery = new AppletGallery('RecreationActivities.json');
