@@ -29,7 +29,8 @@ class AppletGallery {
                 <div class="card-body">
                     <h5 class="card-title">${applet.Applet_No}</h5>
                     <p class="card-text">${applet.Description}</p>
-                    <a href="${applet.file}" class="btn btn-primary text-center" style="display: block; width: 100%;">Go to Applet</a>
+                    <!-- Removed the "Go to Applet" button below -->
+                    <!-- <a href="${applet.file}" class="btn btn-primary text-center" style="display: block; width: 100%;">Go to Applet</a> -->
                 </div>
             </div>`
         ).join('');

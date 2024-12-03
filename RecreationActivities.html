@@ -31,7 +31,9 @@
     justify-content: center;
     margin: 3rem;
     justify-content: space-between;
+    gap: 2rem; 
 }
+
 
 .applet-flex-container > div {
     margin-left: 1rem;
@@ -44,12 +46,14 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle initial shadow */
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth animation for card */
+    margin: 1rem; /* Add spacing around each card */
 }
 
 .card:hover {
     transform: scale(1.1); /* Slight zoom effect */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
 }
+
 
 /* Reset padding and margin for all elements */
 * {
@@ -170,16 +174,17 @@ body {
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
 
-        .content {
-            margin-top: 100px; /* To ensure content doesn't hide under the fixed navbar */
-            position: relative;
-            width: 200%;
-            height: 200vh;
-            background-image: url('https://c4.wallpaperflare.com/wallpaper/186/193/251/coffee-cup-coffee-book-wooden-table-wallpaper-preview.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+.content {
+    margin-top: 100px; 
+    position: relative;
+    width: 300%;
+    height: 300vh;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/186/193/251/coffee-cup-coffee-book-wooden-table-wallpaper-preview.jpg');
+    background-size:100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
         .content::before {
             content: "";
