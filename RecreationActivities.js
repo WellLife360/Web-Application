@@ -29,8 +29,7 @@ class AppletGallery {
                 <div class="card-body">
                     <h5 class="card-title">${applet.Applet_No}</h5>
                     <p class="card-text">${applet.Description}</p>
-                    <!-- Removed the "Go to Applet" button below -->
-                    <!-- <a href="${applet.file}" class="btn btn-primary text-center" style="display: block; width: 100%;">Go to Applet</a> -->
+                    <a href="${applet.Link}" class="btn btn-primary text-center" style="display: block; width: 100%;">Click if Interested</a>
                 </div>
             </div>`
         ).join('');
@@ -52,7 +51,6 @@ class AppletGallery {
 
         this.renderAppletGallery(filteredapplet);
     }   
-    
 }
 
 const appletgallery = new AppletGallery('RecreationActivities.json');

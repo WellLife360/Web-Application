@@ -1,7 +1,7 @@
 [
     {
         "Applet_No": "Frisbee",
-        "Description": "This activity involves a fun and fast-paced game of ultimate frisbee, where players aim to score points by catching the frisbee in the opposing team's end zone.",
+        "Description": "This activity involves fun and fast-paced game of ultimate frisbee, where players aim to score points by catching the frisbee in the opposing team's end zone.",
         "file": "frisbee.html",
         "Image": "https://ik.imagekit.io/02fmeo4exvw/June2016/Frisbee_main.jpg"
     },
@@ -19,7 +19,7 @@
     },
     {
         "Applet_No": "Badminton",
-        "Description": "This activity involves a game where two or four players use rackets to hit a shuttlecock back and forth over a net.",
+        "Description": "This activity involves a game where two or four players use rackets to hit a shuttlecock back and forth over a net, strategy, teamwork, and quick reflexes.",
         "file": "badminton.html",
         "Image": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg/f_auto/primary/kfsyzuaoipfhm4qonqci"
     },
@@ -31,13 +31,13 @@
     },
     {
         "Applet_No": "Dance",
-        "Description": "This activity includes various forms of dance, allowing users to engage in creative expression through rhythm and movement.",
+        "Description": "This activity includes various forms of dance, allowing users to engage in creative expression through movement, flexibility, balance, and endurance.",
         "file": "dance.html",
         "Image": "https://t3.ftcdn.net/jpg/03/72/71/80/360_F_372718076_pLwDA6fUUDDWvgETtDOr67dUymN8Nzb3.jpg"
     },
     {
         "Applet_No": "Walking",
-        "Description": "This activity encourages a simple and effective way to stay active by walking outdoors or indoors for exercise.",
+        "Description": "This activity encourages a simple and effective way to stay active by walking outdoors or indoors, improving cardiovascular health, endurance, and overall well-being.",
         "file": "walking.html",
         "Image": "https://static01.nyt.com/images/2022/08/03/well/FITNESS-WALKING-MEALS/FITNESS-WALKING-MEALS-videoSixteenByNineJumbo1600.jpg"
     },
