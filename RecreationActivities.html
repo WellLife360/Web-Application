@@ -9,48 +9,58 @@
 
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom, #1e90ff, #87ceeb); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            overflow-x: hidden;
-        }
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #1e90ff, #87ceeb); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+}
 
-        .title {
-            text-align: center;
-            margin-top: 4rem;
-            font-weight: bold;
-        }
+.title {
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: bold;
+}
 
-        .applet-flex-container {
-            display: flex;
-            justify-content: center;
-            margin: 3rem;
-            justify-content: space-between;
-        }
+.applet-flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    justify-content: space-between;
+}
 
-        .applet-flex-container > div {
-            margin-left: 1rem;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;   
-        }
+.applet-flex-container > div {
+    margin-left: 1rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transitions */
+}
 
-        .card:hover {
-            transform: scale(1.05); 
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
+.card {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle initial shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth animation for card */
+}
 
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            list-style: none;
-            scroll-behavior: smooth;
-        }
+.card:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+/* Reset padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
 
         /* GGGGG   L       OOO   BBBBB   L       SSSSS      TTTTT  Y   Y  L       EEEEE  SSSSS        
   G       L      O   O  B    B  L      S              T     Y Y   L       E      S             

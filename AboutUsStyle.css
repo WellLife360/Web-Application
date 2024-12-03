@@ -137,7 +137,8 @@ body {
     color: #666;
     margin-bottom: 20px;
   }
-  
+
+  /*Team Member*/  
   .team-section {
     text-align: center;
     padding: 30px 20px;
@@ -195,7 +196,8 @@ body {
   .team-member:hover h3, .team-member:hover p {
     color: #007BFF;
   }
-
+  
+/*Footer Section*/
   .footer {
     background-color: #3d3b3bd1;
     color: #ffffff;
