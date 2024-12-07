@@ -31,10 +31,11 @@ class AppletGallery {
                 <div class="card-body">
                     <h5 class="card-title">${applet.Applet_No}</h5>
                     <p class="card-text">${applet.Description}</p>
+                    <p class="card-text"><strong>Schedule:</strong> ${applet.Schedule || 'Not Available'}</p>
                 </div>
             </div>`
         ).join('');
-    }
+    }    
 
     bindSearchEvent() {
         const appletSearchBar = document.getElementById('appletSearchBar'); 
@@ -57,7 +58,12 @@ class AppletGallery {
         this.map.clearMarkers(); // Clear existing markers
         appletgallery.forEach(applet => {
             if (applet.latitude && applet.longitude) {
-                const message = `${applet.Applet_No}: ${applet.Description}`;
+                // Combine the title and the map-specific image in the popup
+                const message = `
+                    <div style="text-align: center;">
+                        <h5 style="margin: 5px 0;">${applet.Applet_No}</h5>
+                        <img src="${applet.MapImage}" alt="${applet.Applet_No}" style="width: 150px; height: auto; border-radius: 5px;">
+                    </div>`;
                 this.map.addMarker(applet.latitude, applet.longitude, message);
             }
         });

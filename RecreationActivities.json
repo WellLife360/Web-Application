@@ -4,71 +4,89 @@
         "Description": "This activity involves fun and fast-paced game of ultimate frisbee, where players aim to score points by catching the frisbee in the opposing team's end zone.",
         "file": "frisbee.html",
         "Image": "https://ik.imagekit.io/02fmeo4exvw/June2016/Frisbee_main.jpg",
+        "MapImage": "https://www.bing.com/th/id/OGC.3b061298a047c841a5987541dba42330?pid=1.7&rurl=http%3a%2f%2fultimatefrisbeezone.com%2fwp-content%2fuploads%2f2017%2f11%2fchicken-wing-throw-ultimate-frisbee.gif&ehk=EjL5L9PW3hHSzekftUiXpyqsCmZvKKbfITl50%2bQ5nek%3d",
         "latitude": 8.3596,
-        "longitude": 124.8679
-    },
+        "longitude": 124.8679,
+        "Schedule": "Every Saturday and Sunday from 4:00 PM to 6:00 PM"
+    },    
     {
         "Applet_No": "Basketball",
         "Description": "This activity allows players to engage in a team sport where they try to score by shooting a basketball into the opposing team's hoop.",
         "file": "basketball.html",
         "Image": "https://media.newyorker.com/photos/65badc73c17031f273a94a9c/master/pass/240212_r43718.jpg",
+        "MapImage": "https://www.gifcen.com/wp-content/uploads/2022/04/basketball-gif-1.gif",
         "latitude": 8.3600,
-        "longitude": 124.8689
+        "longitude": 124.8689,
+        "Schedule": "Everyday from 6:30 PM to 9:00 PM"
     },
     {
         "Applet_No": "Volleyball",
         "Description": "This activity allows players to participate in a fast-paced team sport where two teams compete to score points by hitting a volleyball over a net.",
         "file": "volleyball.html",
         "Image": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl/f_auto/primary/a1mdtk6qn3nepjexqi9y",
+        "MapImage": "https://media.tenor.com/OtxmM_UJnHwAAAAC/volleyball-face.gif",
         "latitude": 8.3595,
-        "longitude": 124.8687
+        "longitude": 124.8687,
+        "Schedule": "Every Wednesday from 3:00 PM to 5:00 PM"
     },
     {
         "Applet_No": "Badminton",
         "Description": "This activity involves a game where two or four players use rackets to hit a shuttlecock back and forth over a net, strategy, teamwork, and quick reflexes.",
         "file": "badminton.html",
         "Image": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg/f_auto/primary/kfsyzuaoipfhm4qonqci",
+        "MapImage": "https://media.tenor.com/OtxmM_UJnHwAAAAC/volleyball-face.gif",
         "latitude": 8.3596,
-        "longitude": 124.8687
+        "longitude": 124.8687,
+        "Schedule": "It depends"
     },
     {
         "Applet_No": "Taekwondo",
         "Description": "This activity teaches the art of Taekwondo, a Korean martial art focused on head-height kicks, jumping and spinning kicks, and fast footwork.",
         "file": "taekwondo.html",
         "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBllVduXN_cciuReD5JRPyLW1R_7o7HWSJg&s",
+        "MapImage": "https://media.giphy.com/media/qezjp0kHJtHIA/giphy.gif",
         "latitude": 8.3602,
-        "longitude": 124.8674
+        "longitude": 124.8674,
+        "Schedule": "Every Wednesday and Friday from 1:00 PM to 5:00 PM"
     },
     {
         "Applet_No": "Dance",
         "Description": "This activity includes various forms of dance, allowing users to engage in creative expression through movement, flexibility, balance, and endurance.",
         "file": "dance.html",
         "Image": "https://t3.ftcdn.net/jpg/03/72/71/80/360_F_372718076_pLwDA6fUUDDWvgETtDOr67dUymN8Nzb3.jpg",
+        "MapImage": "https://th.bing.com/th/id/R.dfd4b4145059d63685aa0647830fcb93?rik=J0s6Zz5sNCbjkw&riu=http%3a%2f%2fkindyou.com%2fwp-content%2fuploads%2f2018%2f03%2fCute-Dance-Gif-from-a-Kid-2.gif&ehk=oYS1ttFKyPnApfZDDh46Wd1%2bv5cnKBUD0yan9AWefRY%3d&risl=&pid=ImgRaw&r=0",
         "latitude": 8.3602,
-        "longitude": 124.8675
+        "longitude": 124.8675,
+        "Schedule": "It depends"
     },
     {
         "Applet_No": "Walking",
         "Description": "This activity encourages a simple and effective way to stay active by walking outdoors or indoors, improving cardiovascular health, endurance, and overall well-being.",
         "file": "walking.html",
         "Image": "https://static01.nyt.com/images/2022/08/03/well/FITNESS-WALKING-MEALS/FITNESS-WALKING-MEALS-videoSixteenByNineJumbo1600.jpg",
+        "MapImage": "https://media.giphy.com/media/vgzz9EH8wTepD2ipRR/giphy.gif",
         "latitude": 8.3605,
-        "longitude": 124.8678
+        "longitude": 124.8678,
+        "Schedule": "Everyday and Everytime"
     },
     {
         "Applet_No": "Running",
         "Description": "This activity promotes cardiovascular health by encouraging users to participate in running exercises, whether outdoors or on a treadmill.",
         "file": "running.html",
         "Image": "https://t3.ftcdn.net/jpg/06/05/98/54/360_F_605985413_uDaH4RfKj3NLArsvyRQhYNMXg0IpV4go.jpg",
+        "MapImage": "https://media0.giphy.com/media/xT4uQyZJVKYYHmFqIU/source.gif",
         "latitude": 8.3593,
-        "longitude": 124.8683
+        "longitude": 124.8683,
+        "Schedule": "It depends"
     },
     {
         "Applet_No": "Clean-up Drive",
         "Description": "This activity promotes cardiovascular health by encouraging users to participate in running exercises, whether outdoors or on a treadmill.",
         "file": "running.html",
         "Image": "https://ppsa.edu.ph/wp-content/uploads/2023/08/11-15.jpg",
+        "MapImage": "https://media.tenor.com/OtxmM_UJnHwAAAAC/volleyball-face.gif",
         "latitude": 8.3598,
-        "longitude": 124.8689
+        "longitude": 124.8689,
+        "Schedule": "Every Wednesday from 8:00 AM to 12:00 AM"
     }
 ]
