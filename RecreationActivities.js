@@ -1,14 +1,16 @@
 class AppletGallery {
     
-    constructor(dataUrl) {
+    constructor(dataUrl, map) {
         this.dataUrl = dataUrl;
         this.appletgallery = [];
+        this.map = map; // Reference to the map instance
         this.init();
     }
 
     async init() {
         await this.fetchData();
         this.renderAppletGallery(this.appletgallery); 
+        this.addMarkersToMap(this.appletgallery); // Add markers to the map
         this.bindSearchEvent();
     }
 
@@ -29,7 +31,6 @@ class AppletGallery {
                 <div class="card-body">
                     <h5 class="card-title">${applet.Applet_No}</h5>
                     <p class="card-text">${applet.Description}</p>
-                    <a href="${applet.Link}" class="btn btn-primary text-center" style="display: block; width: 100%;">Click if Interested</a>
                 </div>
             </div>`
         ).join('');
@@ -41,16 +42,57 @@ class AppletGallery {
         appletSearchBar.addEventListener('input', () => {
             this.filterApplet(appletSearchBar.value);
         });
-
     }
 
     filterApplet(query) {
         const filteredapplet = this.appletgallery.filter(applet => {
-            return applet.Applet_No.toLowerCase().includes(query.toLowerCase())
+            return applet.Applet_No.toLowerCase().includes(query.toLowerCase());
         });
 
         this.renderAppletGallery(filteredapplet);
-    }   
+        this.addMarkersToMap(filteredapplet); // Update markers to match filtered results
+    }
+
+    addMarkersToMap(appletgallery) {
+        this.map.clearMarkers(); // Clear existing markers
+        appletgallery.forEach(applet => {
+            if (applet.latitude && applet.longitude) {
+                const message = `${applet.Applet_No}: ${applet.Description}`;
+                this.map.addMarker(applet.latitude, applet.longitude, message);
+            }
+        });
+    }
 }
 
-const appletgallery = new AppletGallery('RecreationActivities.json');
+class LeafletMap {
+
+    constructor(containerId, center, zoom) {
+        this.map = L.map(containerId).setView(center, zoom);
+        this.markers = [];
+        this.initTileLayer();
+    }
+
+    initTileLayer() {
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(this.map);
+    }
+
+    addMarker(lat, lng, message) {
+        const marker = L.marker([lat, lng]).addTo(this.map);
+        marker.bindPopup(message);
+        this.markers.push(marker);
+    }
+
+    clearMarkers() {
+        this.markers.forEach(marker => this.map.removeLayer(marker));
+        this.markers = [];
+    }
+}
+
+// Initialize the map
+const myMap = new LeafletMap('map', [8.360004, 124.868419], 18);
+
+// Initialize the gallery and link it with the map
+const appletgallery = new AppletGallery('RecreationActivities.json', myMap);
