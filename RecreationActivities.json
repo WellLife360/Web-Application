@@ -4,48 +4,48 @@
         "Description": "This activity involves fun and fast-paced game of ultimate frisbee, where players aim to score points by catching the frisbee in the opposing team's end zone.",
         "file": "frisbee.html",
         "Image": "https://ik.imagekit.io/02fmeo4exvw/June2016/Frisbee_main.jpg",
-        "latitude": 8.3602,
-        "longitude": 124.8685
+        "latitude": 8.3596,
+        "longitude": 124.8679
     },
     {
         "Applet_No": "Basketball",
         "Description": "This activity allows players to engage in a team sport where they try to score by shooting a basketball into the opposing team's hoop.",
         "file": "basketball.html",
         "Image": "https://media.newyorker.com/photos/65badc73c17031f273a94a9c/master/pass/240212_r43718.jpg",
-        "latitude": 8.3610,
-        "longitude": 124.8690
+        "latitude": 8.3600,
+        "longitude": 124.8689
     },
     {
         "Applet_No": "Volleyball",
         "Description": "This activity allows players to participate in a fast-paced team sport where two teams compete to score points by hitting a volleyball over a net.",
         "file": "volleyball.html",
         "Image": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl/f_auto/primary/a1mdtk6qn3nepjexqi9y",
-        "latitude": 8.3598,
-        "longitude": 124.8682
+        "latitude": 8.3595,
+        "longitude": 124.8687
     },
     {
         "Applet_No": "Badminton",
         "Description": "This activity involves a game where two or four players use rackets to hit a shuttlecock back and forth over a net, strategy, teamwork, and quick reflexes.",
         "file": "badminton.html",
         "Image": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg/f_auto/primary/kfsyzuaoipfhm4qonqci",
-        "latitude": 8.3620,
-        "longitude": 124.8688
+        "latitude": 8.3596,
+        "longitude": 124.8687
     },
     {
         "Applet_No": "Taekwondo",
         "Description": "This activity teaches the art of Taekwondo, a Korean martial art focused on head-height kicks, jumping and spinning kicks, and fast footwork.",
         "file": "taekwondo.html",
         "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBllVduXN_cciuReD5JRPyLW1R_7o7HWSJg&s",
-        "latitude": 8.3625,
-        "longitude": 124.8692
+        "latitude": 8.3602,
+        "longitude": 124.8674
     },
     {
         "Applet_No": "Dance",
         "Description": "This activity includes various forms of dance, allowing users to engage in creative expression through movement, flexibility, balance, and endurance.",
         "file": "dance.html",
         "Image": "https://t3.ftcdn.net/jpg/03/72/71/80/360_F_372718076_pLwDA6fUUDDWvgETtDOr67dUymN8Nzb3.jpg",
-        "latitude": 8.3630,
-        "longitude": 124.8695
+        "latitude": 8.3602,
+        "longitude": 124.8675
     },
     {
         "Applet_No": "Walking",
@@ -53,14 +53,14 @@
         "file": "walking.html",
         "Image": "https://static01.nyt.com/images/2022/08/03/well/FITNESS-WALKING-MEALS/FITNESS-WALKING-MEALS-videoSixteenByNineJumbo1600.jpg",
         "latitude": 8.3605,
-        "longitude": 124.8680
+        "longitude": 124.8678
     },
     {
         "Applet_No": "Running",
         "Description": "This activity promotes cardiovascular health by encouraging users to participate in running exercises, whether outdoors or on a treadmill.",
         "file": "running.html",
         "Image": "https://t3.ftcdn.net/jpg/06/05/98/54/360_F_605985413_uDaH4RfKj3NLArsvyRQhYNMXg0IpV4go.jpg",
-        "latitude": 8.3590,
+        "latitude": 8.3593,
         "longitude": 124.8683
     },
     {
@@ -68,7 +68,7 @@
         "Description": "This activity promotes cardiovascular health by encouraging users to participate in running exercises, whether outdoors or on a treadmill.",
         "file": "running.html",
         "Image": "https://ppsa.edu.ph/wp-content/uploads/2023/08/11-15.jpg",
-        "latitude": 8.3595,
-        "longitude": 124.8687
+        "latitude": 8.3598,
+        "longitude": 124.8689
     }
 ]

@@ -81,7 +81,17 @@ class LeafletMap {
 
     addMarker(lat, lng, message) {
         const marker = L.marker([lat, lng]).addTo(this.map);
-        marker.bindPopup(message);
+        
+        // When the mouse hovers over the marker, show the popup
+        marker.on('mouseover', () => {
+            marker.bindPopup(message).openPopup();
+        });
+
+        // When the mouse moves out, close the popup
+        marker.on('mouseout', () => {
+            marker.closePopup();
+        });
+
         this.markers.push(marker);
     }
 
